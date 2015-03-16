@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bower": "*"
+  },
+  "devDependencies": {
+    "ember-cli-rails-addon": "0.0.11"
+  }
+}

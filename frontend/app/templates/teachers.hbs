@@ -1,0 +1,19 @@
+{{#if savedSuccessfully}}
+<p class="success-message spec-success-message">Your email was sent successfully!</p>
+{{/if}}
+{{number}}
+<div class="container">
+  <h3>Current Teachers</h3>
+  {{#each teacher in model}}
+  <div class="row add-margin">
+    <div class="col-md-6">
+      <p>{{teacher.name}}</p>
+      <p>{{teacher.email}}</p>
+      <p>Bio: {{teacher.bio}}</p>
+    </div>
+    <div class="col-md-6">{{#link-to 'teacher.new-email' teacher.id class="spec-email-link"}}Send This Teacher An Email{{/link-to}}</div>
+  </div>
+  <hr>
+  {{/each}}
+  {{outlet}}
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <h3>Locations</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Find the location closest to you</p>
+      {{#each location in model}}
+      <div class="row">
+        <div class="col-md-6">{{location.name}}</div>
+        <div class="col-md-6">{{#link-to 'locations.show' location}}Location Details{{/link-to}}</div>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-6">
+      {{outlet}}
+    </div>
+  </div>
+</div>

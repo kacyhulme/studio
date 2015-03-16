@@ -1,0 +1,16 @@
+@import "bootstrap_imports";
+@import "bootswatch";
+
+html, body {
+  margin: 20px;
+}
+.add-margin {
+  margin-bottom: 10px;
+}
+
+.success-message {
+  border: $alert-info-border;
+  border-radius: $alert-border-radius;
+  background-color: $brand-success;
+  padding: $alert-padding;
+}

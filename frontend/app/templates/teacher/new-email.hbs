@@ -1,0 +1,13 @@
+<form {{action "send" model on="submit"}}>
+  <fieldset>
+    <div class="form-group">
+      {{input value=model.sender placeholder='Your Email' class="form-control spec-email-input"}}
+    </div>
+    <div class="form-group">
+      {{input value=model.body placeholder='Your Message' class="form-control spec-message-input"}}
+    </div>
+    <div class="form-action">
+      <input type="submit" value="Send" class="btn btn-success spec-send-button">
+      <button {{action "cancel" model}} class="btn btn-info">Cancel</button>
+  </fieldset>
+</form>
